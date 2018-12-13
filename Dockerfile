@@ -19,8 +19,8 @@ RUN chmod +x bin/*.sh
 WORKDIR /opt/tomcat/webapps
 
 # 拷贝程序包
-ADD ./target/helloworld-k8s.war /opt/tomcat/webapps
-RUN unzip -o -d /opt/tomcat/webapps/helloworld-k8s  helloworld-k8s.war && rm -rf helloworld-k8s.war
+ADD ./target/helloworld.war /opt/tomcat/webapps
+RUN unzip -o -d /opt/tomcat/webapps/helloworld  helloworld.war && rm -rf helloworld.war
 
 # 暴露8080端口
 EXPOSE 8080
