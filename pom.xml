@@ -11,7 +11,7 @@
 
     <groupId>com.jinx</groupId>
     <artifactId>helloworld</artifactId>
-    <!--<version>0.0.1-SNAPSHOT</version>-->
+    <version>0.0.1-SNAPSHOT</version>
     <name>helloworld</name>
     <packaging>war</packaging>
 
@@ -46,6 +46,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <!-- 产生的构件的文件名，默认值是${artifactId}-${version}。 -->
+        <finalName>projectname</finalName>
     </build>
 
 </project>
